@@ -112,6 +112,8 @@ app.use(staticPath, express.static('./static'))
 //托管静态资源
 app.use(express.static('static'));
 app.use(express.static('source'));
+app.use('/dist', express.static('dist'));
+app.use('/static', express.static('dist/static'));
 
 module.exports = app.listen(port, function (err) {
   if (err) {
