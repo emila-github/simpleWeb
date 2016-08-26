@@ -1,0 +1,32 @@
+{
+  "name": "lol-zt-2016-lplsummer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "build": "node build/build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+
+    "handlebars": "4.0.5",
+    "handlebars-loader": "1.1.4"
+  },
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.1.0",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.13.3",
+
+    "glob": "^7.0.5",
+    "html-webpack-plugin": "^2.8.1",
+    "http-proxy-middleware": "^0.12.0",
+    "ora": "^0.2.0",
+    "shelljs": "^0.6.0",
+    "webpack": "1.12.13",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-hot-middleware": "^2.6.0",
+    "webpack-merge": "^0.8.3"
+  }
+}
