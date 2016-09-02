@@ -10,8 +10,7 @@ var entries = getEntry('./source/**/*.entry.js'); // 获得入口js文件
 module.exports = {
   entry: entries,
   externals: {
-    'jquery': 'jQuery',
-    'wx': 'wx'
+    'jquery': 'jQuery'
   },
   output: {
     path: config.build.assetsRoot,
@@ -39,12 +38,12 @@ module.exports = {
       //  test: /\.vue$/,
       //  loader: 'vue'
       //},
-      //{
-      //  test: /\.js$/,
-      //  loader: 'babel',
-      //  include: projectRoot,
-      //  exclude: /node_modules/
-      //},
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        include: projectRoot,
+        exclude: /node_modules/
+      },
       //{
       //  test: /\.json$/,
       //  loader: 'json'
