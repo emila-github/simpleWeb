@@ -1,3 +1,3 @@
 module.exports = function() {
-  alert('Hi, mod！')
+  alert('Hi, mod!!!')
 }

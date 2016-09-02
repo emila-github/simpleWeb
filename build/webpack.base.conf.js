@@ -10,8 +10,7 @@ var entries = getEntry('./source/**/*.entry.js'); // 获得入口js文件
 module.exports = {
   entry: entries,
   externals: {
-    'jquery': 'jQuery',
-    'wx': 'wx'
+    'jquery': 'jQuery'
   },
   output: {
     path: config.build.assetsRoot,
