@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-
     "handlebars": "4.0.5",
     "handlebars-loader": "1.1.4"
   },
@@ -24,7 +23,6 @@
     "connect-history-api-fallback": "^1.1.0",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
-
     "glob": "^7.0.5",
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.12.0",
