@@ -5,7 +5,7 @@ var projectRoot = path.resolve(__dirname, '../')
 
 var glob = require('glob');
 var entries = getEntry('./source/**/*.entry.js'); // 获得入口js文件
-
+entries['js/specs']= './source/js/specs.js';//jasmine测试页面入口
 
 module.exports = {
   entry: entries,
