@@ -189,6 +189,9 @@ karma.conf.js 文件内容如下：
 	}
 
 
+## 运行测试用例 ##
+
+	$ karma start
 
 
 ## 资料 ##
