@@ -12,4 +12,7 @@
 
 ## mocha-webpack使用 ##
 
-https://www.npmjs.com/package/mocha-webpack
+- [npmjs] [mocha-webpack](https://www.npmjs.com/package/mocha-webpack)
+
+## issues ##
+- 关于 mocha-webpack中没有 `--compilers`,  是因为webpack的`babel-loader`已经解决了es6 loader问题。（[issues](https://github.com/zinserjan/mocha-webpack/issues/23)）
