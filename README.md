@@ -105,15 +105,15 @@ karma.conf.js 文件内容如下：
 	    // ... normal karma configuration
 	    files: [
 	      // all files ending in "_test"
-	      {pattern: 'test/*_test.js', watched: false},
-	      {pattern: 'test/**/*_test.js', watched: false}
+	      {pattern: 'test/*.test.js', watched: false},
+	      {pattern: 'test/**/*.test.js', watched: false}
 	      // each file acts as entry point for the webpack configuration
 	    ],
 	
 	    preprocessors: {
 	      // add webpack as preprocessor
-	      'test/*_test.js': ['webpack'],
-	      'test/**/*_test.js': ['webpack']
+	      'test/*.test.js': ['webpack'],
+	      'test/**/*.test.js': ['webpack']
 	    },
 	
 	    webpack: {
@@ -163,7 +163,7 @@ karma.conf.js 文件内容如下：
 
 	// test/test_index.js
 	
-	// require all modules ending in "_test" from the
+	// require all modules ending in ".test" from the
 	// current directory and all subdirectories
 	var testsContext = require.context(".", true, /.test$/);
 	testsContext.keys().forEach(testsContext);
@@ -177,8 +177,8 @@ karma.conf.js 文件内容如下：
 
 	    preprocessors: {
 	      // add webpack as preprocessor
-	      'test/*_test.js': ['webpack', 'sourcemap'],
-	      'test/**/*_test.js': ['webpack', 'sourcemap']
+	      'test/*.test.js': ['webpack', 'sourcemap'],
+	      'test/**/*.test.js': ['webpack', 'sourcemap']
 	    },
 
 并把生成的 sourcemap 告诉 webpack
