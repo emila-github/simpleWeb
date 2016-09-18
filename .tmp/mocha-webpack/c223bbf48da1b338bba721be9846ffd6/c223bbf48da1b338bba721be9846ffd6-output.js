@@ -44,13 +44,13 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
-	    var testsContext = __webpack_require__(1);
+	"use strict";
 
-	    var runnable = testsContext.keys();
+	var testsContext = __webpack_require__(1);
 
-	    runnable.forEach(testsContext);
-	    
+	var runnable = testsContext.keys();
+
+	runnable.forEach(testsContext);
 
 /***/ },
 /* 1 */
@@ -78,12 +78,13 @@
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// add.test.js
+	'use strict';
+
 	var add = __webpack_require__(3);
 	var expect = __webpack_require__(4).expect;
 
-	describe('加法函数的测试', function() {
-	    it('1 加 1 应该等于 2', function() {
+	describe('加法函数的测试', function () {
+	    it('1 加 1 应该等于 2', function () {
 	        expect(add(1, 1)).to.be.equal(2);
 	    });
 	});
@@ -92,7 +93,8 @@
 /* 3 */
 /***/ function(module, exports) {
 
-	// add.js
+	"use strict";
+
 	function add(x, y) {
 	    return x + y;
 	}
@@ -107,25 +109,46 @@
 
 /***/ },
 /* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _add = __webpack_require__(6);
+
+	var _add2 = _interopRequireDefault(_add);
+
+	var _chai = __webpack_require__(4);
+
+	var _chai2 = _interopRequireDefault(_chai);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var expect = _chai2.default.expect;
+
+	describe('加法函数的测试2', function () {
+	    it('1 加 1 应该等于 2-1', function () {
+	        expect((0, _add2.default)(1, 1)).to.be.equal(2);
+	    });
+	});
+
+	describe('加法函数的测试2', function () {
+	    it('1 加 1 应该等于 2-2', function () {
+	        expect((0, _add2.default)(1, 1)).to.be.equal(2);
+	    });
+	});
+
+/***/ },
+/* 6 */
 /***/ function(module, exports) {
 
-	// add.test.js
-	import add from './add2.js';
-	import chai from 'chai';
-	let expect = chai.expect;
+	"use strict";
 
-	describe('加法函数的测试2', function() {
-	    it('1 加 1 应该等于 2-1', function() {
-	        expect(add(1, 1)).to.be.equal(2);
-	    });
-	});
+	function add2(x, y) {
+	    return x + y;
+	}
 
-	describe('加法函数的测试2', function() {
-	    it('1 加 1 应该等于 2-2', function() {
-	        expect(add(1, 1)).to.be.equal(2);
-	    });
-	});
+	module.exports = add2;
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=82cdecb7c7044e6b7fc15e276ca2cf08-output.js.map
+//# sourceMappingURL=c223bbf48da1b338bba721be9846ffd6-output.js.map
