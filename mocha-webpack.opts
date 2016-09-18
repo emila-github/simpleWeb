@@ -1,0 +1,5 @@
+--require source-map-support/register
+--growl
+--colors
+--webpack-config webpack.config-test.js
+source/**/*.test.js

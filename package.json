@@ -4,15 +4,16 @@
   "description": "",
   "main": "",
   "scripts": {
+    "test": "mocha-webpack --webpack-config webpack.config-test.js \"source/**/*.test.js\"",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-
     "handlebars": "4.0.5",
-    "handlebars-loader": "1.1.4"
+    "handlebars-loader": "1.1.4",
+    "webpack-node-externals": "^1.4.3"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -24,13 +25,15 @@
     "connect-history-api-fallback": "^1.1.0",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
-
     "glob": "^7.0.5",
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.12.0",
+    "mocha": "^3.0.2",
+    "mocha-webpack": "^0.6.0",
     "ora": "^0.2.0",
     "shelljs": "^0.6.0",
-    "webpack": "1.12.13",
+    "source-map-support": "^0.4.2",
+    "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0",
     "webpack-merge": "^0.8.3"
